@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import React, { Component } from 'react';
-
 import ChoroplethMap from './components/ChoroplethMap';
+import { Container, Nav } from "./styled-components";
+
 // <ChoroplethMap data={this.state.data}/>
 class App extends Component {
   state = {
@@ -11,21 +12,97 @@ class App extends Component {
   }
   render() {
     return (
-      <div className="App">
+      <Container className ="App">
+        <Container className = "header">
+          <h1 className = "header-style">Faculty Hiring Analysis Dashboard</h1>
+        </Container>
+         <Container className="pr-5 pl-5 pt-5 pb-5">
+          {/*Row 0*/}
+          <Container className="row">
+            <Container className="col-md-12 mb-4">
+              <Container className="card grid-card card-colour">
+                <Container className="card-heading">
+                  <Container >
+                    Graph 1
+                  </Container>
+                </Container>
 
-        <div className="App-header">
-          <p>Faculty Hiring Analysis</p>
-        </div>
+                <Container className="card-value pt-4">
+                  <span>
+                    Hello World!
+                  </span>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
 
-        <div style={{height:"100vh", width: "100vw"}} className = "Horizontal-Widget">
-          <ChoroplethMap data={this.state.data}/>
-        </div>
-        <div style={{height:"100vh", width: "100vw"}} className = "Horizontal-Widget">
-          <ChoroplethMap data={this.state.data}/>
-        </div>
+          {/* Row 1 */}
+          <Container className="row">
+            <Container className="col-md-6 mb-4">
+              <Container className="card grid-card card-colour">
+                <Container className="card-heading">
+                  <Container >
+                    Graph 2
+                  </Container>
+                </Container>
 
-        
-      </div>
+                <Container className="card-value pt-4">
+                  <span>
+                    Hello World!
+                  </span>
+                </Container>
+              </Container>
+            </Container>
+
+            <Container className="col-md-6 mb-4">
+              <Container className="card grid-card card-colour">
+                <Container className="card-heading">
+                  <Container >
+                    Graph 3
+                  </Container>
+                </Container>
+                <Container className="card-value pt-4">
+                  <span>
+                    Hello World!
+                  </span>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+
+          {/* Row 2*/}
+          <Container className="row">
+            <Container className="col-md-6 mb-4">
+              <Container className="card grid-card card-colour">
+                <Container className="card-heading mb-3">
+                  <Container>
+                    Graph 4
+                  </Container>
+                </Container>
+                <Container className="card-value pt-4">
+                  <span>
+                    Hello World!
+                  </span>
+                </Container>
+              </Container>
+            </Container>
+            <Container className="col-md-6 mb-4">
+              <Container className="card grid-card card-colour">
+                <Container className="card-heading mb-3">
+                  <Container>
+                    Graph 5
+                  </Container>
+                </Container>
+                <Container className="card-value pt-4">
+                  <span>
+                    Hello World!
+                  </span>
+                </Container>
+              </Container>
+            </Container>
+          </Container>
+        </Container>
+      </Container>
       
     );
   }
