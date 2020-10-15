@@ -14,23 +14,23 @@ class App extends Component {
     return (
       <Container className ="App">
         <Container className = "header">
-          <h1 className = "header-style">Faculty Hiring Analysis Dashboard</h1>
+          <h3 className = "header-style">Faculty Hiring Analysis Dashboard</h3>
         </Container>
          <Container className="pr-5 pl-5 pt-5 pb-5">
           {/*Row 0*/}
           <Container className="row">
             <Container className="col-md-12 mb-4">
-              <Container className="card grid-card card-colour">
-                <Container className="card-heading">
-                  <Container >
-                    Graph 1
-                  </Container>
+              <Container className="card big-grid-card card-colour">
+                <Container>
+                  <h4>
+                    Graph 1 (Male:Female Ratio in Top 20 CS Colleges)
+                  </h4>
                 </Container>
 
                 <Container className="card-value pt-4">
-                  <span>
-                    Hello World!
-                  </span>
+                  <div style={{height:"100vh"}}>
+                    <ChoroplethMap data = {this.state.data}/>
+                  </div>
                 </Container>
               </Container>
             </Container>
@@ -40,10 +40,10 @@ class App extends Component {
           <Container className="row">
             <Container className="col-md-6 mb-4">
               <Container className="card grid-card card-colour">
-                <Container className="card-heading">
-                  <Container >
+                <Container>
+                  <h4>
                     Graph 2
-                  </Container>
+                  </h4>
                 </Container>
 
                 <Container className="card-value pt-4">
@@ -56,10 +56,10 @@ class App extends Component {
 
             <Container className="col-md-6 mb-4">
               <Container className="card grid-card card-colour">
-                <Container className="card-heading">
-                  <Container >
+                <Container>
+                  <h4>
                     Graph 3
-                  </Container>
+                  </h4>
                 </Container>
                 <Container className="card-value pt-4">
                   <span>
@@ -74,10 +74,10 @@ class App extends Component {
           <Container className="row">
             <Container className="col-md-6 mb-4">
               <Container className="card grid-card card-colour">
-                <Container className="card-heading mb-3">
-                  <Container>
+                <Container>
+                  <h4>
                     Graph 4
-                  </Container>
+                  </h4>
                 </Container>
                 <Container className="card-value pt-4">
                   <span>
@@ -88,10 +88,10 @@ class App extends Component {
             </Container>
             <Container className="col-md-6 mb-4">
               <Container className="card grid-card card-colour">
-                <Container className="card-heading mb-3">
-                  <Container>
+                <Container>
+                  <h4>
                     Graph 5
-                  </Container>
+                  </h4>
                 </Container>
                 <Container className="card-value pt-4">
                   <span>

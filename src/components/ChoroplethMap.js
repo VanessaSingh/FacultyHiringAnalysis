@@ -45,7 +45,7 @@ class ChoroplethMap extends Component {
                     // don't show tooltip if country don't present in dataset
                     if (!data) { return; }
                     // tooltip content
-                    return ['<div class="hoverinfo">',
+                    return ['<div class="hoverinfo" style="color:black">',
                         '<strong>', geo.properties.name, '</strong>',
                         '<br>Count: <strong>', data.numberOfThings, '</strong>',
                         '</div>'].join('');

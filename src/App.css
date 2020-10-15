@@ -25,10 +25,11 @@
 }
 
 .header-style {
-  padding-top: 10px;
-  padding-left: 5px;
+  padding-top: 20px;
+  padding-left: 20px;
   padding-bottom: 5px;
-  font-weight: 200;
+  font-weight: 150;
+  font-size: 1.2 rem !important;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -53,9 +54,10 @@
   flex-direction: column;
   padding: 1.5rem;
   height: 50vh;
+  
 }
 
-.chart-card {
+.big-grid-card {
   display: flex;
   flex-grow: 1;
   flex-direction: column;
@@ -69,40 +71,16 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 1.5rem 1.5rem .75rem 1.5rem;
-  height: 50px;
-}
-
-.card-heading {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  position: relative;
-  min-height: 30px;
+  padding: 1.5rem;
+  height: 60vh;
 }
 
 .card-colour {
   background: rgb(15, 15, 15) !important;
-  
-}
-
-.logo-adjust {
-  margin-top: -4px;
 }
 
 .col-md-8.border-left {
   border-left: 1px solid rgba(222, 226, 230, 0.07) !important;
-}
-
-.fab {
-  color: rgb(255, 255, 255);
-  opacity: 0.6;
 }
 
 .conv > span {
