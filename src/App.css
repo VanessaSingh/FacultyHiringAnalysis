@@ -79,6 +79,36 @@
   background: rgb(15, 15, 15) !important;
 }
 
+.radial-charts {
+  position: relative;
+  padding-left: 180px;
+  justify-content: center;
+  align-items: center;
+}
+
+.radial-chart {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  transition: all 0.3s ease-in;
+  justify-content: center;
+  align-items: center;
+}
+
+.radial-chart.no-outer_circle_completion .radial-chart-outer_circle_completion {
+  opacity: 0;
+}
+.radial-chart-total {
+  opacity: 0.3;
+}
+.radial-chart-outer_circle_completion {
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: all 0.6s cubic-bezier(0.58, 0.16, 0.5, 1.14);
+  transition-delay: 0.3s;
+}
+
 .col-md-8.border-left {
   border-left: 1px solid rgba(222, 226, 230, 0.07) !important;
 }
