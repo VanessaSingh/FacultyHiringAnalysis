@@ -2,8 +2,8 @@
   font-size: 1.5 rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: 100;
-  color: aliceblue !important;
-  background: rgb(23, 32, 46) !important;
+  color: rgba(39, 38, 38) !important;
+  background: "#868e96" !important;
 }
 
 .App-logo {
@@ -20,7 +20,8 @@
 
 /* navbar styles */
 .header {
-  background: black;
+  background-color:rgb(61,92,104);
+  border-color: rgb(255,245,238);
   height: 80px;
 }
 
@@ -30,6 +31,7 @@
   padding-bottom: 5px;
   font-weight: 150;
   font-size: 1.2 rem !important;
+  color: aliceblue;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -76,7 +78,9 @@
 }
 
 .card-colour {
-  background: rgb(15, 15, 15) !important;
+  background: rgb(255,255,255) !important;
+  border-color: rgb(255,255, 255);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
 }
 
 .radial-charts {
@@ -104,6 +108,20 @@
 }
 .radial-chart-outer_circle_completion {
   transform: rotate(90deg);
+  transform-origin: center;
+  transition: all 0.6s cubic-bezier(0.58, 0.16, 0.5, 1.14);
+  transition-delay: 0.3s;
+}
+
+.radial-chart-outer_circle_completion:hover {
+  transform: scale(1.125);
+  transform-origin: center;
+  transition: all 0.6s cubic-bezier(0.58, 0.16, 0.5, 1.14);
+  transition-delay: 0.3s;
+}
+
+.radial-chart-total:hover {
+  transform: scale(1.125);
   transform-origin: center;
   transition: all 0.6s cubic-bezier(0.58, 0.16, 0.5, 1.14);
   transition-delay: 0.3s;

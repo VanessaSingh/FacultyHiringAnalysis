@@ -42,19 +42,20 @@ class RadialChart extends Component {
                         <circle
                             className="radial-chart-total"
                             stroke={outer_circle_colour}
-                            strokeWidth={stroke_width}
-                            fill="none"
+                            fill={outer_circle_colour}
+                            
                             cx="90"
                             cy="90"
                             r={outer_radius}
+                            
                         />
                         <circle
                             className="radial-chart-outer_circle_completion"
                             stroke={outer_circle_colour}
-                            strokeWidth={stroke_width}
-                            strokeDasharray={`${outer_stroke_len},${outer_circumference}`}
+                            fill={outer_circle_colour}
+                            
                             strokeLinecap="round"
-                            fill="none"
+                            
                             cx="90"
                             cy="90"
                             r={outer_radius}
@@ -62,22 +63,22 @@ class RadialChart extends Component {
                         <circle
                             className="radial-chart-total"
                             stroke={inner_circle_colour}
-                            strokeWidth={stroke_width}
-                            fill="none"
+                            fill={inner_circle_colour}
+                            
                             cx="90"
                             cy="90"
-                            r={inner_radius}
+                            r={inner_circle_completion}
                         />
                         <circle
                             className="radial-chart-outer_circle_completion"
                             stroke={inner_circle_colour}
-                            strokeWidth={stroke_width}
-                            strokeDasharray={`${inner_stroke_len},${inner_circumference}`}
+                            fill={inner_circle_colour}
+                            
                             strokeLinecap="round"
-                            fill="none"
+                            
                             cx="90"
                             cy="90"
-                            r={inner_radius}
+                            r={inner_circle_completion}
                         />
                     </svg>
                 </div>

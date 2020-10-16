@@ -25,7 +25,7 @@ class App extends Component {
               <Container className="card big-grid-card card-colour">
                 <Container>
                   <h4>
-                    Graph 1 (Male:Female Ratio in Top 20 CS Colleges)
+                    Male:Female Ratio in Top 20 CS Colleges
                   </h4>
                 </Container>
 
@@ -50,18 +50,18 @@ class App extends Component {
 
                 <Container className="card-value pt-4">
                   <Container className = "radial-charts">
-                    <RadialChart outer_circle_completion={100} inner_circle_completion={10} 
-                      outer_circle_colour="green" inner_circle_colour="blue"
+                    <RadialChart outer_circle_completion={100} inner_circle_completion={40} 
+                      outer_circle_colour="#B5EAD7" inner_circle_colour="#95d1e8"
                     />
-                    <RadialChart outer_circle_completion={100} inner_circle_completion={10} 
-                      outer_circle_colour="green" inner_circle_colour="blue"
+                    <RadialChart outer_circle_completion={100} inner_circle_completion={20} 
+                      outer_circle_colour="#B5EAD7" inner_circle_colour="#95d1e8"
                     />
                     <br/>
-                    <RadialChart outer_circle_completion={100} inner_circle_completion={10} 
-                      outer_circle_colour="green" inner_circle_colour="blue"
+                    <RadialChart outer_circle_completion={100} inner_circle_completion={30} 
+                      outer_circle_colour="#B5EAD7" inner_circle_colour="#95d1e8"
                     />
                     <RadialChart outer_circle_completion={100} inner_circle_completion={10} 
-                      outer_circle_colour="green" inner_circle_colour="blue"
+                      outer_circle_colour="#B5EAD7" inner_circle_colour="#95d1e8"
                     />
                   </Container>
                   
